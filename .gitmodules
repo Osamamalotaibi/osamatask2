@@ -1,0 +1,3 @@
+[submodule "tools_autoswagger"]
+	path = tools_autoswagger
+	url = https://github.com/intruder-io/autoswagger.git
