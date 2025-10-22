@@ -1,0 +1,21 @@
+ __  __ _                                  _   
+|  \/  (_) ___ _ __ ___  _ __   __ _ _   _| |_ 
+| |\/| | |/ __| '__/ _ \| '_ \ / _` | | | | __|
+| |  | | | (__| | | (_) | | | | (_| | |_| | |_ 
+|_|  |_|_|\___|_|  \___/|_| |_|\__,_|\__,_|\__|
+[36m15:30:49.538[0;39m [1;30m[main][0;39m [34mINFO [0;39m [35mcom.zaxxer.hikari.HikariDataSource[0;39m - HikariPool-1 - Starting...
+[36m15:30:49.642[0;39m [1;30m[main][0;39m [34mINFO [0;39m [35mcom.zaxxer.hikari.pool.HikariPool[0;39m - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@6bb2d00b
+[36m15:30:49.643[0;39m [1;30m[main][0;39m [34mINFO [0;39m [35mcom.zaxxer.hikari.HikariDataSource[0;39m - HikariPool-1 - Start completed.
+[36m15:30:49.682[0;39m [1;30m[main][0;39m [34mINFO [0;39m [35morg.hibernate.Version[0;39m - HHH000412: Hibernate ORM core version [WORKING]
+[36m15:30:49.704[0;39m [1;30m[main][0;39m [34mINFO [0;39m [35mo.h.c.i.RegionFactoryInitiator[0;39m - HHH000026: Second-level cache disabled
+[36m15:30:49.771[0;39m [1;30m[main][0;39m [31mWARN [0;39m [35morg.hibernate.orm.deprecation[0;39m - HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+[36m15:30:49.779[0;39m [1;30m[main][0;39m [34mINFO [0;39m [35mo.hibernate.orm.connections.pooling[0;39m - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 9.3
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+[36m15:30:50.415[0;39m [1;30m[main][0;39m [34mINFO [0;39m [35mio.micronaut.runtime.Micronaut[0;39m - Startup completed in 1207ms. Server Running: http://localhost:8090
+[36m15:31:50.315[0;39m [1;30m[scheduled-executor-thread-1][0;39m [31mWARN [0;39m [35mi.n.r.d.DnsServerAddressStreamProviders[0;39m - Can not find io.netty.resolver.dns.macos.MacOSDnsServerAddressStreamProvider in the classpath, fallback to system defaults. This may result in incorrect DNS resolutions on MacOS. Check whether you have a dependency on 'io.netty:netty-resolver-dns-native-macos'

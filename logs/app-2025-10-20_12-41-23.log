@@ -1,0 +1,60 @@
+ __  __ _                                  _   
+|  \/  (_) ___ _ __ ___  _ __   __ _ _   _| |_ 
+| |\/| | |/ __| '__/ _ \| '_ \ / _` | | | | __|
+| |  | | | (__| | | (_) | | | | (_| | |_| | |_ 
+|_|  |_|_|\___|_|  \___/|_| |_|\__,_|\__,_|\__|
+[36m12:41:24.436[0;39m [1;30m[main][0;39m [34mINFO [0;39m [35mcom.zaxxer.hikari.HikariDataSource[0;39m - HikariPool-1 - Starting...
+[36m12:41:24.583[0;39m [1;30m[main][0;39m [34mINFO [0;39m [35mcom.zaxxer.hikari.pool.HikariPool[0;39m - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@6138e79a
+[36m12:41:24.583[0;39m [1;30m[main][0;39m [34mINFO [0;39m [35mcom.zaxxer.hikari.HikariDataSource[0;39m - HikariPool-1 - Start completed.
+[36m12:41:24.686[0;39m [1;30m[main][0;39m [34mINFO [0;39m [35morg.hibernate.Version[0;39m - HHH000412: Hibernate ORM core version [WORKING]
+[36m12:41:24.712[0;39m [1;30m[main][0;39m [34mINFO [0;39m [35mo.h.c.i.RegionFactoryInitiator[0;39m - HHH000026: Second-level cache disabled
+[36m12:41:24.799[0;39m [1;30m[main][0;39m [31mWARN [0;39m [35morg.hibernate.orm.deprecation[0;39m - HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+[36m12:41:24.807[0;39m [1;30m[main][0;39m [34mINFO [0;39m [35mo.hibernate.orm.connections.pooling[0;39m - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 9.3
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+[36m12:41:25.505[0;39m [1;30m[main][0;39m [1;31mERROR[0;39m [35mi.m.h.server.netty.NettyHttpServer[0;39m - Unable to start server. Port *:8085 already in use.
+[36m12:41:25.514[0;39m [1;30m[main][0;39m [34mINFO [0;39m [35mcom.zaxxer.hikari.HikariDataSource[0;39m - HikariPool-1 - Shutdown initiated...
+[36m12:41:25.520[0;39m [1;30m[main][0;39m [34mINFO [0;39m [35mcom.zaxxer.hikari.HikariDataSource[0;39m - HikariPool-1 - Shutdown completed.
+[36m12:41:25.524[0;39m [1;30m[main][0;39m [1;31mERROR[0;39m [35mio.micronaut.runtime.Micronaut[0;39m - Error starting Micronaut server: Unable to start Micronaut server on *:8085
+io.micronaut.http.server.exceptions.ServerStartupException: Unable to start Micronaut server on *:8085
+	at io.micronaut.http.server.netty.NettyHttpServer.bind(NettyHttpServer.java:672)
+	at io.micronaut.http.server.netty.NettyHttpServer.start(NettyHttpServer.java:314)
+	at io.micronaut.http.server.netty.NettyHttpServer.start(NettyHttpServer.java:124)
+	at io.micronaut.runtime.Micronaut.start(Micronaut.java:81)
+	at com.example.taskapi.Application.main(Application.java:9)
+Caused by: java.net.BindException: Address already in use
+	at java.base/sun.nio.ch.Net.bind0(Native Method)
+	at java.base/sun.nio.ch.Net.bind(Net.java:511)
+	at java.base/sun.nio.ch.ServerSocketChannelImpl.netBind(ServerSocketChannelImpl.java:335)
+	at java.base/sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:297)
+	at io.netty.channel.socket.nio.NioServerSocketChannel.doBind(NioServerSocketChannel.java:148)
+	at io.netty.channel.AbstractChannel$AbstractUnsafe.bind(AbstractChannel.java:434)
+	at io.netty.channel.DefaultChannelPipeline$HeadContext.bind(DefaultChannelPipeline.java:1353)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeBind(AbstractChannelHandlerContext.java:492)
+	at io.netty.channel.AbstractChannelHandlerContext.bind(AbstractChannelHandlerContext.java:471)
+	at io.netty.channel.DefaultChannelPipeline.bind(DefaultChannelPipeline.java:994)
+	at io.netty.channel.Channel.bind(Channel.java:302)
+	at io.netty.bootstrap.AbstractBootstrap$2.run(AbstractBootstrap.java:380)
+	at io.netty.util.concurrent.AbstractEventExecutor.runTask(AbstractEventExecutor.java:148)
+	at io.netty.util.concurrent.AbstractEventExecutor.safeExecute(AbstractEventExecutor.java:141)
+	at io.netty.util.concurrent.SingleThreadEventExecutor.runAllTasks(SingleThreadEventExecutor.java:507)
+	at io.netty.channel.SingleThreadIoEventLoop.run(SingleThreadIoEventLoop.java:183)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$5.run(SingleThreadEventExecutor.java:1073)
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.base/java.lang.Thread.run(Thread.java:1447)
+	Suppressed: java.util.concurrent.CompletionException: Rethrowing promise failure cause
+		at io.netty.util.concurrent.DefaultPromise.rethrowIfFailed(DefaultPromise.java:685)
+		at io.netty.util.concurrent.DefaultPromise.syncUninterruptibly(DefaultPromise.java:426)
+		at io.netty.channel.DefaultChannelPromise.syncUninterruptibly(DefaultChannelPromise.java:125)
+		at io.netty.channel.DefaultChannelPromise.syncUninterruptibly(DefaultChannelPromise.java:30)
+		at io.micronaut.http.server.netty.NettyHttpServer.bind(NettyHttpServer.java:627)
+		at io.micronaut.http.server.netty.NettyHttpServer.start(NettyHttpServer.java:314)
+		at io.micronaut.http.server.netty.NettyHttpServer.start(NettyHttpServer.java:124)
+		at io.micronaut.runtime.Micronaut.start(Micronaut.java:81)
+		at com.example.taskapi.Application.main(Application.java:9)

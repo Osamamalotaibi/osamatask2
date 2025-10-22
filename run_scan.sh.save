@@ -1,0 +1,39 @@
+#!/usr/bin/env bash
+set -euo pipefail
+
+APP_PORT=8085
+SPEC_URL="http://localhost:${APP_PORT}/v3/api-docs"
+
+# 1) تأكد أنك تبنيت الـ shaded jar (صار عندك بالتوّ)
+./mvnw -q clean package -DskipTests
+
+# 2) شغّل السيرفر من الـ shaded jar
+JAR=$(ls target/*-SNAPSHOT-shaded.jar | head -n1)
+echo "[run] starting app: $JAR"
+nohup java -jar "$JAR" >/tmp/mn-app.log 2>&1 & PID=$!
+echo $PID >/tmp/mn-app.pid
+
+# 3) انتظر الـ /v3/api-docs يجهز
+echo "[run] waiting for $SPEC_URL ..."
+for i in {1..90}; do
+  if curl -fsS "$SPEC_URL" >/dev/null 2>&1; then
+    echo "[run] api docs are up."
+    break
+  fi
+  sleep 1
+done
+
+# 4) حضّر Autoswagger وشغّل الفحص
+python3 -m venv .venv
+source .venv/bin/activate
+pip install --upgrade pip >/dev/null
+pip install "git+https://github.com/intruder-io/autoswagger.git" >/dev/null
+
+python autoswagger/autoswagger.py "$SPEC_URL" -json -product -rate 5 > autoswagger-report.json
+echo "[done] report: $(pwd)/autoswagger-report.json"
+
+# 5) أوقف التطبيق
+kill "$PID" 2>/dev/null || true
+wait "$PID" 2>/dev/null || true
+
+

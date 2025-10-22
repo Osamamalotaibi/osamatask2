@@ -1,0 +1,52 @@
+ __  __ _                                  _   
+|  \/  (_) ___ _ __ ___  _ __   __ _ _   _| |_ 
+| |\/| | |/ __| '__/ _ \| '_ \ / _` | | | | __|
+| |  | | | (__| | | (_) | | | | (_| | |_| | |_ 
+|_|  |_|_|\___|_|  \___/|_| |_|\__,_|\__,_|\__|
+[36m12:46:26.844[0;39m [1;30m[main][0;39m [34mINFO [0;39m [35mcom.zaxxer.hikari.HikariDataSource[0;39m - HikariPool-1 - Starting...
+[36m12:46:26.974[0;39m [1;30m[main][0;39m [34mINFO [0;39m [35mcom.zaxxer.hikari.pool.HikariPool[0;39m - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@6138e79a
+[36m12:46:26.974[0;39m [1;30m[main][0;39m [34mINFO [0;39m [35mcom.zaxxer.hikari.HikariDataSource[0;39m - HikariPool-1 - Start completed.
+[36m12:46:27.083[0;39m [1;30m[main][0;39m [34mINFO [0;39m [35morg.hibernate.Version[0;39m - HHH000412: Hibernate ORM core version [WORKING]
+[36m12:46:27.108[0;39m [1;30m[main][0;39m [34mINFO [0;39m [35mo.h.c.i.RegionFactoryInitiator[0;39m - HHH000026: Second-level cache disabled
+[36m12:46:27.188[0;39m [1;30m[main][0;39m [31mWARN [0;39m [35morg.hibernate.orm.deprecation[0;39m - HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+[36m12:46:27.197[0;39m [1;30m[main][0;39m [34mINFO [0;39m [35mo.hibernate.orm.connections.pooling[0;39m - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 9.3
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+[36m12:46:27.982[0;39m [1;30m[main][0;39m [34mINFO [0;39m [35mio.micronaut.runtime.Micronaut[0;39m - Startup completed in 1425ms. Server Running: http://localhost:8085
+[36m12:47:27.856[0;39m [1;30m[scheduled-executor-thread-1][0;39m [31mWARN [0;39m [35mi.n.r.d.DnsServerAddressStreamProviders[0;39m - Can not find io.netty.resolver.dns.macos.MacOSDnsServerAddressStreamProvider in the classpath, fallback to system defaults. This may result in incorrect DNS resolutions on MacOS. Check whether you have a dependency on 'io.netty:netty-resolver-dns-native-macos'
+[36m13:33:57.103[0;39m [1;30m[HikariPool-1:housekeeper][0;39m [31mWARN [0;39m [35mcom.zaxxer.hikari.pool.HikariPool[0;39m - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=17m59s689ms).
+[36m13:41:03.507[0;39m [1;30m[HikariPool-1:housekeeper][0;39m [31mWARN [0;39m [35mcom.zaxxer.hikari.pool.HikariPool[0;39m - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=7m6s404ms).
+[36m14:20:54.870[0;39m [1;30m[HikariPool-1:housekeeper][0;39m [31mWARN [0;39m [35mcom.zaxxer.hikari.pool.HikariPool[0;39m - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=38m21s343ms).
+[36m15:30:08.662[0;39m [1;30m[HikariPool-1:housekeeper][0;39m [31mWARN [0;39m [35mcom.zaxxer.hikari.pool.HikariPool[0;39m - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1h6m43s759ms).
+[36m16:10:37.027[0;39m [1;30m[HikariPool-1:housekeeper][0;39m [31mWARN [0;39m [35mcom.zaxxer.hikari.pool.HikariPool[0;39m - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=40m28s366ms).
+[36m16:46:17.555[0;39m [1;30m[HikariPool-1:housekeeper][0;39m [31mWARN [0;39m [35mcom.zaxxer.hikari.pool.HikariPool[0;39m - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=35m40s528ms).
+[36m17:33:22.762[0;39m [1;30m[HikariPool-1:housekeeper][0;39m [31mWARN [0;39m [35mcom.zaxxer.hikari.pool.HikariPool[0;39m - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=46m35s196ms).
+[36m17:49:50.619[0;39m [1;30m[HikariPool-1:housekeeper][0;39m [31mWARN [0;39m [35mcom.zaxxer.hikari.pool.HikariPool[0;39m - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=16m27s857ms).
+[36m18:25:30.860[0;39m [1;30m[HikariPool-1:housekeeper][0;39m [31mWARN [0;39m [35mcom.zaxxer.hikari.pool.HikariPool[0;39m - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=35m40s241ms).
+[36m19:03:46.159[0;39m [1;30m[HikariPool-1:housekeeper][0;39m [31mWARN [0;39m [35mcom.zaxxer.hikari.pool.HikariPool[0;39m - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=33m15s217ms).
+[36m19:35:24.778[0;39m [1;30m[HikariPool-1:housekeeper][0;39m [31mWARN [0;39m [35mcom.zaxxer.hikari.pool.HikariPool[0;39m - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=31m38s619ms).
+[36m20:43:16.641[0;39m [1;30m[HikariPool-1:housekeeper][0;39m [31mWARN [0;39m [35mcom.zaxxer.hikari.pool.HikariPool[0;39m - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1h7m51s863ms).
+[36m21:23:58.734[0;39m [1;30m[HikariPool-1:housekeeper][0;39m [31mWARN [0;39m [35mcom.zaxxer.hikari.pool.HikariPool[0;39m - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=40m42s94ms).
+[36m21:37:45.920[0;39m [1;30m[HikariPool-1:housekeeper][0;39m [31mWARN [0;39m [35mcom.zaxxer.hikari.pool.HikariPool[0;39m - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=13m47s186ms).
+[36m22:07:53.381[0;39m [1;30m[HikariPool-1:housekeeper][0;39m [31mWARN [0;39m [35mcom.zaxxer.hikari.pool.HikariPool[0;39m - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=30m7s461ms).
+[36m22:27:50.678[0;39m [1;30m[HikariPool-1:housekeeper][0;39m [31mWARN [0;39m [35mcom.zaxxer.hikari.pool.HikariPool[0;39m - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=19m57s297ms).
+[36m23:26:19.129[0;39m [1;30m[HikariPool-1:housekeeper][0;39m [31mWARN [0;39m [35mcom.zaxxer.hikari.pool.HikariPool[0;39m - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=58m28s450ms).
+[36m00:26:48.412[0;39m [1;30m[HikariPool-1:housekeeper][0;39m [31mWARN [0;39m [35mcom.zaxxer.hikari.pool.HikariPool[0;39m - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1h29s283ms).
+[36m01:30:08.124[0;39m [1;30m[HikariPool-1:housekeeper][0;39m [31mWARN [0;39m [35mcom.zaxxer.hikari.pool.HikariPool[0;39m - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1h3m19s713ms).
+[36m02:02:07.343[0;39m [1;30m[HikariPool-1:housekeeper][0;39m [31mWARN [0;39m [35mcom.zaxxer.hikari.pool.HikariPool[0;39m - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=31m59s219ms).
+[36m02:38:57.353[0;39m [1;30m[HikariPool-1:housekeeper][0;39m [31mWARN [0;39m [35mcom.zaxxer.hikari.pool.HikariPool[0;39m - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=35m49s991ms).
+[36m03:16:51.178[0;39m [1;30m[HikariPool-1:housekeeper][0;39m [31mWARN [0;39m [35mcom.zaxxer.hikari.pool.HikariPool[0;39m - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=37m53s826ms).
+[36m04:36:20.868[0;39m [1;30m[HikariPool-1:housekeeper][0;39m [31mWARN [0;39m [35mcom.zaxxer.hikari.pool.HikariPool[0;39m - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1h19m29s690ms).
+[36m05:29:44.621[0;39m [1;30m[HikariPool-1:housekeeper][0;39m [31mWARN [0;39m [35mcom.zaxxer.hikari.pool.HikariPool[0;39m - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=53m23s753ms).
+[36m06:37:14.546[0;39m [1;30m[HikariPool-1:housekeeper][0;39m [31mWARN [0;39m [35mcom.zaxxer.hikari.pool.HikariPool[0;39m - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1h7m29s925ms).
+[36m07:10:30.916[0;39m [1;30m[HikariPool-1:housekeeper][0;39m [31mWARN [0;39m [35mcom.zaxxer.hikari.pool.HikariPool[0;39m - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=33m16s369ms).
+[36m08:10:49.881[0;39m [1;30m[HikariPool-1:housekeeper][0;39m [31mWARN [0;39m [35mcom.zaxxer.hikari.pool.HikariPool[0;39m - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1h18s965ms).
+[36m08:44:35.671[0;39m [1;30m[HikariPool-1:housekeeper][0;39m [31mWARN [0;39m [35mcom.zaxxer.hikari.pool.HikariPool[0;39m - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=33m45s791ms).
+[36m09:17:13.476[0;39m [1;30m[HikariPool-1:housekeeper][0;39m [31mWARN [0;39m [35mcom.zaxxer.hikari.pool.HikariPool[0;39m - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=32m37s805ms).
+[36m09:35:11.558[0;39m [1;30m[HikariPool-1:housekeeper][0;39m [31mWARN [0;39m [35mcom.zaxxer.hikari.pool.HikariPool[0;39m - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=17m58s81ms).
+[36m10:15:04.476[0;39m [1;30m[HikariPool-1:housekeeper][0;39m [31mWARN [0;39m [35mcom.zaxxer.hikari.pool.HikariPool[0;39m - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=9m52s594ms).
