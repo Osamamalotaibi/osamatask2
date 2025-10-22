@@ -19,3 +19,9 @@ target/
 *.log
 autoswagger-*.json
 cp.txt
+.venv/
+logs/
+target/
+*.log
+autoswagger-*.json
+cp.txt
