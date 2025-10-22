@@ -13,3 +13,9 @@ out/
 .settings
 .classpath
 .factorypath
+.venv/
+logs/
+target/
+*.log
+autoswagger-*.json
+cp.txt
